@@ -5,11 +5,10 @@ class Data:
         self.name = name
 
 class CreateTxt:
-    conn = Connection()
     
     @classmethod
     def insert_name_in_txt(cls):
         data = Data('hi')
         
-        CreateTxt.conn.insert(data.name)
+        Connection.insert(data.name)
         
